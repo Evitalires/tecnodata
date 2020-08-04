@@ -4978,6 +4978,9 @@ html.no-csstransitions .s-hero__content {
   .s-footer__block--end::before {
     display: none;
   }
+  .s-contact__email {
+    font-size: 7vw;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -4989,6 +4992,9 @@ html.no-csstransitions .s-hero__content {
     height: 6rem;
     width: 6rem;
     line-height: 6rem;
+  }
+  .folio-item img {
+    min-height: 300px;
   }
 }
 
