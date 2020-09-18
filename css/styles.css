@@ -3231,6 +3231,10 @@ input::-moz-focus-inner {
   padding-left: 0;
   margin: 0 1rem;
 }
+.s-header__nav li:last-child {
+  border-left: 1px solid var(--color-white);
+  padding-left: 3em;
+}
 
 /* ------------------------------------------------------------------- 
  * ## mobile menu toggle
