@@ -3146,7 +3146,7 @@ input::-moz-focus-inner {
     margin-bottom: var(--vspace-1);
   }
   .item-list .item {
-    margin-bottom: 0;
+    margin-bottom: 1em;
   }
   .item-list .item {
     padding-right: var(--gutter-md);
@@ -4238,41 +4238,6 @@ html.no-csstransitions .s-hero__content {
 }
 
 /* ------------------------------------------------------------------- 
- * ## about process
- * ------------------------------------------------------------------- */
-.s-about__process {
-  counter-reset: ctr;
-}
-
-.s-about__process h3 {
-  padding-left: 2.5em;
-  position: relative;
-}
-
-.s-about__process h3::before {
-  content: counter(ctr);
-  counter-increment: ctr;
-  display: block;
-  font-family: var(--font-2);
-  font-size: var(--text-size);
-  font-weight: 600;
-  text-align: center;
-  color: white;
-  background-color: var(--color-1);
-  height: var(--vspace-1_5);
-  width: var(--vspace-1_5);
-  line-height: var(--vspace-1_5);
-  border-radius: 50%;
-  position: absolute;
-  left: 0;
-  top: -5px;
-}
-
-.s-about__process .item-process {
-  position: relative;
-}
-
-/* ------------------------------------------------------------------- 
  * responsive:
  * about
  * ------------------------------------------------------------------- */
@@ -4337,6 +4302,92 @@ html.no-csstransitions .s-hero__content {
     height: 16rem;
     top: -2rem;
     right: calc(1.8rem);
+  }
+}
+/* ------------------------------------------------------------------- 
+ * ## why Us
+ * ------------------------------------------------------------------- */
+#s-whyUs {
+  height: max-content;
+  min-height: 900px;
+  position: relative;
+}
+#s-whyUs:before {
+  width: 80px;
+  height: 100px;
+  top: 100px;
+  right: 185px;
+  background-image: url(../images/candle.svg);
+}
+#s-whyUs:after {
+  width: 500px;
+  height: 500px;
+  bottom: -24px;
+  left: 70px;
+  background-image: url(../images/table.svg);
+}
+#s-whyUs:before,
+#s-whyUs:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-size: contain;
+}
+.s-whyUs {
+  counter-reset: ctr;
+  background-color: var(--color-white);
+}
+
+.s-whyUs .item-process {
+  margin-bottom: 4em;
+}
+
+.s-whyUs .item-list .item-title {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.s-whyUs .item-list h3 {
+  padding-left: 2.5em;
+  position: relative;
+}
+
+.s-whyUs .item-list h3::before {
+  content: counter(ctr);
+  counter-increment: ctr;
+  display: block;
+  font-family: var(--font-2);
+  font-size: var(--text-size);
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  background-color: var(--color-1);
+  height: var(--vspace-1_5);
+  width: var(--vspace-1_5);
+  line-height: var(--vspace-1_5);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.s-whyUs .item-process {
+  position: relative;
+}
+.s-whyUs .item-process p {
+  font-size: 24px;
+}
+@media screen and (max-width: 1000px) {
+  #s-whyUs:after {
+    position: relative;
+    bottom: -24px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .s-whyUs .item-list h3 {
+    padding-left: 2em;
   }
 }
 
