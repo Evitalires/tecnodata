@@ -109,6 +109,10 @@
   --color-2: hsla(4, 79%, 63%, 1);
   --color-3: hsla(34, 75%, 80%, 1);
 
+  --color-red: hsla(345, 93%, 44%, 1);
+  --color-azul: #263238;
+  --color-gris: #666d77;
+
   /* theme color variations
      */
   --color-1-lighter: hsla(345, 93%, 64%, 1);
@@ -1694,6 +1698,40 @@ h1,
   letter-spacing: -0.015em;
 }
 
+/* Colors
+ * ------------------------------------- */
+.t-red {
+  color: var(--color-red);
+}
+.t-blue {
+  color: var(--color-azul);
+}
+.t-gray {
+  color: var(--color-gris);
+}
+.t-black {
+  color: var(--color-black);
+}
+.t-white {
+  color: var(--color-white);
+}
+
+.b-red {
+  background: var(--color-red);
+}
+.b-blue {
+  background: var(--color-azul);
+}
+.b-gray {
+  background: var(--color-gris);
+}
+.b-black {
+  background: var(--color-black);
+}
+.b-white {
+  background: var(--color-white);
+}
+
 @media screen and (max-width: 400px) {
   h1,
   .h1 {
@@ -2963,30 +3001,49 @@ input::-moz-focus-inner {
 }
 
 .section-title {
-  display: block;
+  display: grid;
+  justify-items: center;
   margin-bottom: var(--vspace-2);
   position: relative;
 }
+
 .section-title::before {
-  content: attr(data-num);
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 110%;
+  height: 4px;
+  bottom: 44%;
+}
+
+.section-title[data-bg="white"]::before {
+  background: var(--color-white);
+}
+.section-title[data-bg="black"]::before {
+  background: var(--color-black);
+}
+.section-title[data-bg="red"]::before {
+  background: var(--color-1);
+}
+.section-title[data-bg="blue"]::before {
+  background: var(--b-blue);
+}
+
+.section-title span {
   font-family: var(--font-2);
   font-weight: 600;
   font-size: calc(var(--text-size) * 10);
   line-height: 1;
   letter-spacing: -0.02em;
-  color: var(--color-text);
-  opacity: 0.1;
 }
 
 .section-title h3 {
   z-index: 2;
   font-weight: 500;
-  color: var(--color-1);
-  padding-bottom: 2em;
-  margin-top: 0;
+  margin: 0;
+  top: 2.5em;
+  padding: 0 0.5em;
   position: absolute;
-  left: 1em;
-  bottom: 0;
 }
 
 .display-1 {
@@ -3191,8 +3248,8 @@ input::-moz-focus-inner {
 }
 
 .s-header__logo img {
-  width: 140px;
-  height: 40px;
+  width: 180px;
+  height: 80px;
   margin-bottom: 0;
 }
 
@@ -3211,6 +3268,7 @@ input::-moz-focus-inner {
   line-height: 6rem;
   padding-top: 1.4rem;
   padding-bottom: 1.4rem;
+  padding-left: 3rem;
   margin: 0;
   text-transform: uppercase;
   letter-spacing: 0.4em;
@@ -3230,10 +3288,6 @@ input::-moz-focus-inner {
   display: inline-block;
   padding-left: 0;
   margin: 0 1rem;
-}
-.s-header__nav li:last-child {
-  border-left: 1px solid var(--color-white);
-  padding-left: 3em;
 }
 
 /* ------------------------------------------------------------------- 
@@ -4087,8 +4141,8 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-  background-color: var(--color-bg);
-  padding-top: calc(7 * var(--space));
+  background-color: var(--color-1);
+  padding-top: calc(5 * var(--space));
   padding-bottom: 0;
   position: relative;
 }
@@ -4103,6 +4157,46 @@ html.no-csstransitions .s-hero__content {
   position: absolute;
   top: 0;
   left: 50%;
+}
+
+.s-about_whoAre {
+  height: 600px;
+  position: relative;
+  margin-bottom: 400px;
+  background-image: url(../images/about-photo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.s-about_whoAre:before {
+  left: -5%;
+  width: 100px;
+  height: 200px;
+  background: url(../images/dotsWhiteVertical.svg);
+}
+.s-about_whoAre:after {
+  right: -5%;
+  bottom: -5%;
+  height: 100px;
+  width: 200px;
+  background: url(../images/dotsWhiteHorizontal.svg);
+}
+.s-about_whoAre:before,
+.s-about_whoAre:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.s-about_whoAre_description {
+  width: 100%;
+  max-width: 700px;
+  padding: 2em 2.5em;
+  position: absolute;
+  left: 20%;
+  bottom: -40%;
+  background: var(--color-azul);
 }
 
 .s-about .horizontal-line {
@@ -4214,6 +4308,17 @@ html.no-csstransitions .s-hero__content {
 @media screen and (max-width: 600px) {
   .s-about .horizontal-line {
     right: calc(2.6rem);
+  }
+
+  .s-about_whoAre {
+    height: 500px;
+  }
+  .s-about_whoAre_description {
+    padding: 1em;
+    left: 0;
+  }
+  .s-about_whoAre:after {
+    bottom: -52%;
   }
 }
 
@@ -4925,6 +5030,22 @@ html.no-csstransitions .s-hero__content {
 }
 
 /* ------------------------------------------------------------------- 
+ * ## SS-WP
+ * ------------------------------------------------------------------- */
+
+.ss-wp {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+}
+.ss-wp a {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+}
+
+/* ------------------------------------------------------------------- 
  * ## go top
  * ------------------------------------------------------------------- */
 .ss-go-top {
@@ -4991,6 +5112,10 @@ html.no-csstransitions .s-hero__content {
   .s-footer {
     padding-top: var(--vspace-1);
   }
+  .ss-wp {
+    transform: scale(0.8);
+  }
+
   .ss-go-top a {
     font-size: 1.6rem;
     height: 6rem;
