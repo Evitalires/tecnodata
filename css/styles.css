@@ -4311,11 +4311,13 @@ html.no-csstransitions .s-hero__content {
   height: max-content;
   min-height: 900px;
   position: relative;
+  padding-top: calc(6 * var(--space));
+  padding-bottom: var(--vspace-2);
 }
 #s-whyUs:before {
   width: 80px;
   height: 100px;
-  top: 100px;
+  top: 28%;
   right: 185px;
   background-image: url(../images/candle.svg);
 }
@@ -4396,6 +4398,7 @@ html.no-csstransitions .s-hero__content {
  *
  * ------------------------------------------------------------------- */
 .s-services {
+  position: relative;
   background-color: var(--color-bg);
   padding-top: calc(6 * var(--space));
   padding-bottom: var(--vspace-2);
@@ -4406,7 +4409,72 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-services .item-service {
-  margin-bottom: 0;
+  margin: 80px 50px;
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 2em 1.5em;
+  height: 300px;
+  border-radius: 25px;
+  transition: 1s;
+  cursor: pointer;
+  border: 2px solid #6c737d;
+}
+.s-services .item-service .item-action {
+  position: relative;
+  bottom: -50px;
+  display: grid;
+}
+
+.s-services .item-action .btn {
+  width: 280px;
+  background: transparent;
+  position: relative;
+  left: 15%;
+  top: 20%;
+  border-radius: 50px;
+}
+.s-services .item-service p {
+  height: 130px;
+}
+.s-services .item-service svg path {
+  fill: #6c737d;
+}
+
+.s-services .item-service:hover {
+  transition: 0.7s;
+  box-shadow: 4px 8px 8px var(--color-black);
+  border: 2px solid var(--color-white);
+}
+
+.s-services .item-service .item-action .btn:hover {
+  color: var(--color-black);
+  box-shadow: 4px 8px 8px var(--color-black);
+  background-color: var(--color-white);
+}
+
+.s-services .item-service:hover svg path {
+  transition: 1s;
+  fill: var(--color-red);
+}
+
+.s-services .item-service .service-icon {
+  position: absolute;
+  left: 45%;
+  bottom: -65%;
+  transform: scale(1.8);
+}
+
+.s-services .item-title {
+  font-size: 28px;
+}
+
+.s-services .item-service p {
+  font-size: 24px;
+}
+
+.s-services .section-title h3 {
+  background: #14171b;
+  padding: 0 2em;
 }
 
 .service-icon {
