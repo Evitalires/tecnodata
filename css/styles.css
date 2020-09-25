@@ -3707,7 +3707,7 @@ input::-moz-focus-inner {
   content: "";
   height: 10rem;
   width: 20rem;
-  background-image: url(../images/dots.svg);
+  background-image: url(../images/icons/icon-dots.svg);
   -webkit-transform: translateX(-4rem);
   transform: translateX(-4rem);
   opacity: 0.25;
@@ -4192,14 +4192,14 @@ html.no-csstransitions .s-hero__content {
   left: -5%;
   width: 100px;
   height: 200px;
-  background: url(../images/dotsWhiteVertical.svg);
+  background: url(../images/icons/icon-dotsWhiteVertical.svg);
 }
 .s-about_whoAre:after {
   right: -5%;
   bottom: -5%;
   height: 100px;
   width: 200px;
-  background: url(../images/dotsWhiteHorizontal.svg);
+  background: url(../images/icons/icon-dotsWhiteHorizontal.svg);
 }
 .s-about_whoAre:before,
 .s-about_whoAre:after {
@@ -4343,14 +4343,14 @@ html.no-csstransitions .s-hero__content {
   height: 100px;
   top: 290px; /* 28 */
   right: 185px;
-  background-image: url(../images/candle.svg);
+  background-image: url(../images/icons/icon-candle.svg);
 }
 #s-whyUs:after {
   width: 500px;
   height: 500px;
   bottom: -24px;
   left: 70px;
-  background-image: url(../images/table.svg);
+  background-image: url(../images/icons/icon-table.svg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -4415,7 +4415,7 @@ html.no-csstransitions .s-hero__content {
     left: 0;
   }
   #s-whyUs:before {
-    top: 330px;
+    top: 290px;
     left: 55%;
   }
   .s-whyUs .item-list .item-title {
