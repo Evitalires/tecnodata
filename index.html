@@ -302,7 +302,7 @@
       >
         <!-- web service -->
         <div class="column item item-service">
-          <div class="" data-aos="fade-up">
+          <div class="item-service-description" data-aos="fade-up">
             <h3 class="item-title">WEB</h3>
             <p>
               Para los que necesitan o quieren saber si necesitan una página
@@ -418,7 +418,7 @@
 
         <!-- Ecommerce -->
         <div class="column item item-service">
-          <div class="" data-aos="fade-up">
+          <div class="item-service-description" data-aos="fade-up">
             <h3 class="item-title">Tienda Online</h3>
             <p>
               ¿Necesitas vender más? Nosostros tenemos herramientas y
@@ -536,7 +536,7 @@
 
         <!-- Diseño Digital -->
         <div class="column item item-service">
-          <div class="" data-aos="fade-up">
+          <div class="item-service-description" data-aos="fade-up">
             <h3 class="item-title">Diseño</h3>
             <p>
               ¿Tienes una idea, marca, emprendimiento o empresa que quieras
@@ -626,7 +626,7 @@
 
         <!-- Marketing Digital -->
         <div class="column item item-service">
-          <div class="" data-aos="fade-up">
+          <div class="item-service-description" data-aos="fade-up">
             <h3 class="item-title">Marketing Digital</h3>
             <p>
               ¿Percibes estancamiento en tú marca? Nosotros podemos aumentar tú
@@ -908,13 +908,13 @@
             <h3 class="h3 t-white b-blue text-header">¿Tienes preguntas?</h3>
           </div>
         </div>
-        <div class="column large-12 w-900-stack">
+        <div class="column large-12 w-900-stack" data-aos="fade-up">
           <h1 class="display-1" data-aos="fade-up">
             A continuación te respondemos nuestras preguntas más frecuentes
           </h1>
         </div>
         <div class="column large-12 w-900-stack faqs-list">
-          <div class="item">
+          <div class="item" data-aos="fade-up">
             <h3 class="item-title">¿En cuánto tiempo tendré el proyecto?</h3>
             <p class="invisible">
               Para sitios web tardamos en promedio 5 días hábiles, 8 días para
@@ -922,14 +922,10 @@
               hábiles según los contenidos propuestos.
             </p>
             <span>
-              <button
-                onClick="showFaqs(this)"
-                data-text="+"
-                class="item-btn"
-              ></button>
+              <a onClick="showFaqs(this)" data-text="+" class="item-btn"></a>
             </span>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-up">
             <h3 class="item-title">¿Cuál es el precio para sus servicios?</h3>
             <p class="invisible">
               Dependerá de las características a implementar. Para determinar
@@ -939,19 +935,15 @@
               <a
                 target="_blank"
                 href="http://wa.me/573223697285?text=Hola,%20necesito%20más%20información"
-                >una conversación por Whatsapp +573223697285</a
-              >
+                >una conversación por Whatsapp +573223697285
+              </a>
               cuya finalidad es profundizar en tús necesidades.
             </p>
             <span>
-              <button
-                onClick="showFaqs(this)"
-                data-text="+"
-                class="item-btn"
-              ></button>
+              <a onClick="showFaqs(this)" data-text="+" class="item-btn"></a>
             </span>
           </div>
-          <div class="item">
+          <div class="item" data-aos="fade-up">
             <h3 class="item-title">¿Tendré soporte técnico?</h3>
             <p class="invisible">
               Por supuesto, una vez te entreguemos tú página web, tienda online
@@ -959,11 +951,7 @@
               soporte 24/7 y un servicio 100% garantizado.
             </p>
             <span>
-              <button
-                onClick="showFaqs(this)"
-                data-text="+"
-                class="item-btn"
-              ></button>
+              <a onClick="showFaqs(this)" data-text="+" class="item-btn"></a>
             </span>
           </div>
         </div>
@@ -985,9 +973,13 @@
           <h1 class="display-1">
             ¿Tienes alguna idea o gran proyecto para despegar?
             <br />
-            Comencemos a trabajar juntos
-            <br />
-            en algo increíble.
+
+            <span class="t-blue">
+              Comencemos a trabajar juntos
+              <br />
+              en algo increíble.
+            </span>
+
             <br />
             Escribenos a:
           </h1>
@@ -1010,7 +1002,7 @@
 
     <!-- footer
     ================================================== -->
-    <footer class="s-footer end">
+    <footer class="s-footer end" data-aos="fade-up">
       <div class="row row-y-top">
         <div class="column large-8 medium-12">
           <div class="row">
@@ -1063,26 +1055,63 @@
             href="http://wa.me/573223697285?text=Hola,%20necesito%20más%20información"
           ></a>
           <svg
-            width="70"
-            height="70"
-            viewBox="0 0 70 70"
+            width="78"
+            height="78"
+            viewBox="0 0 78 78"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 42.0517 2.08543 48.6163 5.67319 54.1108L1.82462 68.4739L16.3047 64.5939C21.7133 68.0179 28.1252 70 35 70Z"
-              fill="#25D366"
-            />
-            <path
-              d="M16.9302 65.005C22.3386 68.2595 28.5224 69.9749 34.8761 69.9749C54.1294 69.9749 70 54.264 70 34.9872C70 15.7328 54.1518 0 34.8761 0C15.6591 0 0.0251007 15.6954 0.0251007 34.9872C0.0251007 41.4258 1.74103 47.6566 4.99504 53.0693L0 70L16.9302 65.005ZM4.1256 34.9872C4.1256 17.9561 17.9203 4.09996 34.8761 4.09996C51.9825 4.09996 65.9 17.9561 65.9 34.9872C65.9 52.0188 51.9825 65.8744 34.8761 65.8744C28.9897 65.8744 23.2694 64.2071 18.3353 61.0519L17.547 60.5482L6.06422 63.9363L9.45175 52.453L8.94814 51.6653C5.79292 46.73 4.1256 40.9633 4.1256 34.9872Z"
-              fill="white"
-            />
-            <path
-              d="M17.0392 28.5406C17.7164 32.0969 19.7266 38.9371 25.5793 44.7898C31.432 50.6425 38.2723 52.6533 41.8291 53.3304C45.9018 54.1059 51.8784 54.2229 54.7992 51.3021L56.4275 49.6738C57.2495 48.8518 57.7023 47.7586 57.7023 46.596C57.7023 45.4333 57.2495 44.3407 56.4275 43.5187L49.9158 37.007C49.0933 36.1845 48.0007 35.7322 46.838 35.7322C45.6754 35.7322 44.5827 36.1845 43.7602 37.007L42.1324 38.6348C41.138 39.6292 39.2608 39.6335 38.2589 38.6471L31.7637 31.8795C31.7541 31.8693 31.7445 31.8592 31.7343 31.8496C30.7383 30.8536 30.7383 29.2327 31.7343 28.2367L33.3621 26.6089C35.0636 24.9074 35.0636 22.1543 33.3621 20.4533L26.8504 13.9416C25.1537 12.2449 22.3926 12.2449 20.6954 13.9416L19.0675 15.5699V15.5694C16.7364 17.9011 15.9593 22.871 17.0392 28.5406ZM21.9669 18.4693C23.6759 16.7993 23.5846 16.7673 23.7731 16.7673C23.8377 16.7673 23.9024 16.7918 23.9515 16.841C30.8131 23.7394 30.5375 23.334 30.5375 23.5316C30.5375 23.6005 30.5124 23.6609 30.4638 23.71L28.8355 25.3378C26.2426 27.9307 26.2325 32.1278 28.8189 34.7324L35.3179 41.5043C35.328 41.5139 35.3376 41.524 35.3478 41.5342C37.9401 44.1265 42.431 44.135 45.0318 41.5342L46.6596 39.9064C46.7579 39.8081 46.9181 39.8081 47.0164 39.9064C53.878 46.8043 53.6024 46.3989 53.6024 46.5965C53.6024 46.6659 53.5773 46.7258 53.5287 46.7749L51.9003 48.4027C50.7847 49.5183 47.2311 50.1859 42.596 49.3031C39.5027 48.7135 33.5549 46.9672 28.4787 41.8909C23.4025 36.8147 21.6561 30.8669 21.0671 27.7737C20.1837 23.1386 20.8513 19.5844 21.9669 18.4693Z"
-              fill="white"
-            />
+            <g filter="url(#filter0_d)">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M35 70C54.33 70 70 54.33 70 35C70 15.67 54.33 0 35 0C15.67 0 0 15.67 0 35C0 42.0517 2.08543 48.6163 5.67319 54.1108L1.82462 68.4739L16.3047 64.5939C21.7133 68.0179 28.1252 70 35 70Z"
+                fill="#25D366"
+              />
+              <path
+                d="M16.9302 65.005C22.3386 68.2595 28.5224 69.9749 34.8761 69.9749C54.1294 69.9749 70 54.264 70 34.9872C70 15.7328 54.1518 0 34.8761 0C15.6591 0 0.0251007 15.6954 0.0251007 34.9872C0.0251007 41.4258 1.74103 47.6566 4.99504 53.0693L0 70L16.9302 65.005ZM4.1256 34.9872C4.1256 17.9561 17.9203 4.09996 34.8761 4.09996C51.9825 4.09996 65.9 17.9561 65.9 34.9872C65.9 52.0188 51.9825 65.8744 34.8761 65.8744C28.9897 65.8744 23.2694 64.2071 18.3353 61.0519L17.547 60.5482L6.06422 63.9363L9.45175 52.453L8.94814 51.6653C5.79292 46.73 4.1256 40.9633 4.1256 34.9872Z"
+                fill="white"
+              />
+              <path
+                d="M17.0392 28.5405C17.7164 32.0968 19.7266 38.937 25.5793 44.7897C31.432 50.6424 38.2723 52.6532 41.8291 53.3304C45.9018 54.1058 51.8784 54.2228 54.7992 51.302L56.4275 49.6737C57.2495 48.8517 57.7023 47.7585 57.7023 46.5959C57.7023 45.4332 57.2495 44.3406 56.4275 43.5187L49.9158 37.0069C49.0933 36.1844 48.0007 35.7321 46.838 35.7321C45.6754 35.7321 44.5827 36.1844 43.7602 37.0069L42.1324 38.6347C41.138 39.6291 39.2608 39.6334 38.2589 38.647L31.7637 31.8794C31.7541 31.8693 31.7445 31.8591 31.7343 31.8495C30.7383 30.8535 30.7383 29.2326 31.7343 28.2366L33.3621 26.6088C35.0636 24.9073 35.0636 22.1542 33.3621 20.4532L26.8504 13.9415C25.1537 12.2448 22.3926 12.2448 20.6954 13.9415L19.0675 15.5698V15.5693C16.7364 17.901 15.9593 22.8709 17.0392 28.5405ZM21.9669 18.4692C23.6759 16.7992 23.5846 16.7672 23.7731 16.7672C23.8377 16.7672 23.9024 16.7917 23.9515 16.8409C30.8131 23.7393 30.5375 23.3339 30.5375 23.5315C30.5375 23.6004 30.5124 23.6608 30.4638 23.7099L28.8355 25.3377C26.2426 27.9306 26.2325 32.1277 28.8189 34.7323L35.3179 41.5042C35.328 41.5138 35.3376 41.5239 35.3478 41.5341C37.9401 44.1264 42.431 44.135 45.0318 41.5341L46.6596 39.9063C46.7579 39.808 46.9181 39.808 47.0164 39.9063C53.878 46.8042 53.6024 46.3988 53.6024 46.5964C53.6024 46.6659 53.5773 46.7257 53.5287 46.7748L51.9003 48.4026C50.7847 49.5183 47.2311 50.1858 42.596 49.303C39.5027 48.7134 33.5549 46.9671 28.4787 41.8908C23.4025 36.8146 21.6561 30.8668 21.0671 27.7736C20.1837 23.1385 20.8513 19.5843 21.9669 18.4692Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <filter
+                id="filter0_d"
+                x="0"
+                y="0"
+                width="78"
+                height="78"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                />
+                <feOffset dx="4" dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow"
+                  result="shape"
+                />
+              </filter>
+            </defs>
           </svg>
         </div>
         <!-- end ss-go-top -->
